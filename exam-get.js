@@ -11,7 +11,7 @@ async function fetchPostDetail() {
         const { status, data, headers } = await axios.get(url); //우측의 객체 보따리에서 더 세분화된 값을 해당하는 변수에 담아라
         //await 응답이 올 때 까지 기다려
 
-        console.log(`[Status] ${status}`); //문자열 중간에 변수로 선언하는 방식 ${x} 파이썬 f-string
+        console.log(`[Status] ${status}`); //문자열 중간에 변수로 선언하는 방식 ${x} 파이썬의 f-string
         console.log(`[Content-Type] ${headers['content-type']}`);
 
         console.log(status);
