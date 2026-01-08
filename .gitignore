@@ -8,3 +8,4 @@ vite.config.ts.*
 ._*
 .venv/
 venv/
+first/
