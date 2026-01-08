@@ -1,0 +1,10 @@
+#이거 삭제하는 법 까먹었다
+node_modules
+dist
+.DS_Store
+server/public
+vite.config.ts.*
+*.tar.gz
+._*
+.venv/
+venv/
