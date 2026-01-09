@@ -3,22 +3,17 @@
 const axios = require('axios');
 
 //로그용 함수, 중첩구조분해, 출력은 해당 함수만 , 목적이 오직 출력뿐! 최대한 간단하게
-const logRes = ({status,request,config}) => {
+const logRes = ({status}) => {
     console.log(`[${status}]`);
-    console.log(`[config 설정 경로]:${config.url}`);
-    console.log(`[실제 요청 경로]: ${request.path}`);
 };
 
-//GET 요청 보냄 parameter도 동일하게 config로 전달, 경로 보기, headers도 넣어보기
+//DELETE 요청 보냄 
 const getPost = async () =>{
     try{
         const config = {
-            method: 'get',
-            url : 'https://jsonplaceholder.typicode.com/comments',
+            method: 'delete',
+            url : 'https://jsonplaceholder.typicode.com/posts/1',
             timeout: 5000,
-            params : {
-                "postId": 1
-            },
             headers : {
                 "Content-Type": "application/json",
             }
